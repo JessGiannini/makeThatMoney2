@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.
+This application is a fast and easy way to update a database for an online store.
 
 ## Table of Contents
 
@@ -14,13 +14,33 @@ This is a application that takes in information about employees on a software en
 - [Tests](#test-instructions)
 - [Questions](#questions)
 
-## Installation Instructions
+  ## Installation Instructions
 
-npm i
+  1.Clone the repository
 
-## Usage
+  git clone
 
-First clone down the repo. Open on any code editor, then install the dependencies by running 'npm i' in the terminal. Next thing run 'npm start'. Follow the prompt in the terminal and answer all the question then you be all set. The HTML file will create inside dist folder.
+  2.Install all the dependencies which includes (dotenv, express, mysql2, sequelize )
+
+  npm i
+
+  3.Create a .env file and fill in your own password
+
+  DB_NAME=ecommerce_db
+  DB_USER=root
+  DB_PW= <---Your Password
+
+  4.Create the database - login in to mysql in terminal under the db directory.
+
+  SOURCE schema.sql
+
+  5.Seed the sample data
+
+  npm run seed
+
+  6.Run the server
+
+  npm run start
 
 ## Author
 
